@@ -8,6 +8,11 @@ body {
 form {
     border: 1px solid #ccc;
     padding: 1rem;
+    display: table;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+
 }
 
 input,
@@ -31,12 +36,123 @@ form button {
 
 header{
 background-color: teal;
-color: white;
+color: black;
 text-align: center;
 padding: 1rem;
 margin-bottom: 1rem;
 }
 
 
+.sidebar{
+    background-color: white;
+    color: teal;
+    height: 10rem;
+    width: 16rem;
+    float: left;
+    
+}
 
- 
+
+ul {
+    list-style-type: none;
+    text-align: right;
+    width: min-content;
+    margin: auto;
+    white-space: nowrap;
+
+
+    }
+
+ul li {
+    margin-top: 20px;
+}
+
+
+
+ul li a:link {
+    color: teal;
+    text-decoration: none;
+
+}
+
+.img {
+    height: 10rem;
+    float: left;
+    margin-right: 20px 
+    
+}
+
+
+
+ .blob{ 
+    margin-left: 16rem;
+ }
+
+ footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+ }
+
+ footer p {
+    width: 100%;
+    text-align: center;
+ }
+
+ footer{
+    background-color: teal;
+    color: #fff;
+ }
+
+ main{
+    padding-top: 10px;
+    
+ }
+
+
+ @media (max-width: 600px) {
+   
+ .sidebar{
+        background-color: white;
+        color: teal;
+        height: 10px;
+        width: 16rem;
+        float: left;
+
+ }
+
+ ul {
+    list-style: none;
+    font-size: 30px;
+    padding-left: 30px;
+ }
+
+ ul li {
+    display: inline-block;
+
+}
+
+.blob{ 
+    margin-left: 40px;
+    margin-top: 30px;
+ }
+
+aside {
+    height: 40px;
+}
+
+ul li {
+    border-right: 2px solid grey;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+ul li:last-child {
+    border: none;
+}
+
+main p{
+    margin-top: 0;
+}
+}
